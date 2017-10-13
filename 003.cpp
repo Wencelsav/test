@@ -9,8 +9,8 @@ using namespace std;
 
 
 int main() {
-    int n=10;
-	int  s[n],x[n],z[20];
+    int n=10,m=2*n;
+	int  s[n],x[n],z[m];
 
 
 
@@ -47,7 +47,7 @@ int main() {
         {z[i/2]=s[i];
         z[i]=x[i];
         }
-	cout << z<< endl;
+	cout << z[m]<< endl;
 	return 0;
     }
 	}
