@@ -1,48 +1,33 @@
-#include "stdafx.h"
-
 #include <iostream>
 
-#include "iostream"
+#include <cstring>
 
-#include "sstream"
+
 
 using namespace std;
 
-const int MAX = 80;
+int main() {
 
-char buffer[MAX] = { 0 };
-
-
+    char str[81];
 
 
-void eatspaces(char* str)
 
-{
-	cin.getline(buffer, sizeof buffer);
-	for (string string; getline(cin, string); ) {
-
-		istringstream stream(string);
-
-		int i = 0;                          
-		int j = 0;                      
-
-		while ((*(str + i) = *(str + j++)) != '\0') { 
-
-			if (*(str + i) != ' ')
-
-				i++;
-			else if (*(str + i) == ' ') {
-				*(str + i) == '%20';
-
-			}
+    cin.getline(str,81);
 
 
-			return;
-		}
-	}
-}
-int main()
-{
-	cout << buffer[MAX] << endl;
-	
+
+    for(int i = 0; i < (strlen(str)); i++)
+
+    {
+
+        if (str[i] == ' ')
+
+            cout << "%20";
+
+        else cout << str[i];
+
+    }
+
+    return 0;
+
 }
