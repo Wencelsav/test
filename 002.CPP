@@ -1,6 +1,7 @@
-#include "stdafx.h"
-#include <iostream>
 
+#include <iostream>
+#include <cstdio>
+using namespace std;
 #include "sstream"
 
 
@@ -10,11 +11,11 @@ int main()
 	int n; 
 	int sum; 
 			 
-	cin » n;
+	cin >>n;
 	a = new int[n];
 	for (int i = 0; i < n; i++)
-		cin » a[i];
-	cin » sum;
+		cin >>a[i];
+	cin >>sum;
 
 	int lt = 0; 
 	int rt = n - 1; 
@@ -27,12 +28,12 @@ int main()
 			rt--;
 		else // if (cursum == sum)
 		{
-			cout « "indexes: " « lt « " " « rt « endl;
-			cout « "values: " « a[lt] « " " « a[rt] « endl;
+			cout << "indexes: " << lt << " " << rt <<endl;
+			cout << "values: " << a[lt] << " " << a[rt] << endl;//«»
 			return 0;
 		}
 	}
-	cout « "not found" « endl;
+	cout << "not found" << endl;
 	return 0;
 }
 
