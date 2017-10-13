@@ -7,24 +7,23 @@
 using namespace std;
 
 int main() {
-
-    char str[81];
-
-
-
-    cin.getline(str,81);
+int n=80;
+    char a[n];
 
 
 
-    for(int i = 0; i < (strlen(str)); i++)
+    cin.getline(a,81);
+
+
+
+    for(int i = 0; i < (strlen(a)); i++)
 
     {
 
-        if (str[i] == ' ')
+        if (a[i] == ' ')
 
-            cout << "%20";
-
-        else cout << str[i];
+        {a[i] == '%20'}
+        else cout << a[i];
 
     }
 
